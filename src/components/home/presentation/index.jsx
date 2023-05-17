@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Div, Span} from "./styles"
+import { Div} from "./styles"
 import { ThemeContext } from "../../../contexts/theme-context"
 
 export const Apresentation = () => {

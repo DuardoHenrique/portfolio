@@ -8,18 +8,20 @@ import { useEffect } from "react"
 
 export const NavBar = () => {
   const [titleNavBar] = useState(['About', 'Skills', 'Projects'])
-
-  const [atualUrl, setAtualUrl] = useState(window.location.href)
+  const [urlAtual, setUrlAtual] = useState(window.location.href)
+  const [urlInitial, setUrlInitial] = useState()
 
   const { theme } = useContext(ThemeContext)
 
-  console.log('State, ', atualUrl)
-
 
   useEffect(() => {
-    console.log('UseEffect',atualUrl)
-    setAtualUrl(atualUrl)
-  })
+    const urlInitial = window.location.href
+    setUrlInitial(urlInitial)
+  }, [])
+
+  useEffect(() => {
+    setUrlAtual(urlAtual)
+  }, [urlAtual])
 
   return (
 
@@ -28,9 +30,9 @@ export const NavBar = () => {
       <Label htmlFor="burguer" >
         <i style={{ color: theme.fontColorText }}><AiOutlineMenu /></i>
       </Label>
-      <Ul onClick={() => setAtualUrl(window.location.href)}>
+      <Ul onClick={() => setUrlAtual(window.location.href)}>
 
-          <Li nameUrl={atualUrl} c={0} >
+          <Li urlInitial={urlInitial} urlAtual={urlAtual} home >
             <Link to={'/'} style={{ color: theme.fontColorText }} >
               Home
             </Link>
@@ -39,7 +41,7 @@ export const NavBar = () => {
         {titleNavBar.map((title, index) => {
           return (
 
-            <Li key={index} nameUrl={atualUrl} c={index + 1}>
+            <Li key={index} urlAtual={urlAtual} >
               <Link to={title.toLocaleLowerCase()} style={{ color: theme.fontColorText }}>
                 {title}
               </Link>

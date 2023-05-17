@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import { SectionAbout } from "../sectionAbout/styles"
 import { Container, H2, P, Span } from "./styles"
 import { ThemeContext } from "../../../contexts/theme-context"
 

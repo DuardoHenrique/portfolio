@@ -1,5 +1,3 @@
-import zam from "../../../assets/zam.jpg"
-import zamDark from "../../../assets/zam-comprimido.jpg"
 import { ConatainerPhoto, Img } from "./styles"
 import { useContext } from "react"
 import { ThemeContext } from "../../../contexts/theme-context"

@@ -25,9 +25,7 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   transition: .1s;
-  display: ${(prop) => prop.nameUrl === 'http://localhost:3000/' && prop.c === 0 ? 'none' : 'block'};
-
-  /* background-color: ${(prop) => console.log(prop)}; */
+  display: ${({urlInitial, urlAtual, home}) => urlAtual === urlInitial && home ? 'none' : 'block'};
 
   &:hover{
     border-bottom: 2px solid rgba(161, 18, 18, 0.94);

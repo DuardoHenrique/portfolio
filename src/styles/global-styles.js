@@ -14,13 +14,9 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Ubuntu', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
-    background: linear-gradient(rgba(254, 254, 240, 0.9),  rgba(221, 247, 249, 0.9), );
-
   }
-
-  /* linear-gradient(rgba(254, 254, 240, 0.9), rgba(221, 247, 249, 0.9)) */
 
   ul {
     list-style-type: none;

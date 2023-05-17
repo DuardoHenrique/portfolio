@@ -1,12 +1,8 @@
-import { useContext, useState } from 'react';
-
-
+import { useContext } from 'react';
 import { Div, I } from './styles';
 import { ThemeContext, themes } from '../../../contexts/theme-context';
 
-
 export const IconTogglerTheme = () => {
-
   const { theme, setTheme } = useContext(ThemeContext)
 
   const inEffect = `
@@ -36,5 +32,3 @@ export const IconTogglerTheme = () => {
     </>
   )
 }
-
-// () => setTheme(theme === themes.light ? themes.dark : themes.light)
