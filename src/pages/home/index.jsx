@@ -1,11 +1,11 @@
 import { Container } from "../../components/home/container"
 import { Footer }  from "../../components/home/footer"
 
-export const Home = () => {
+export const Home = ( ) => {
 
   return (
     <>
-      <section >
+      <section>
         <Container />
         <Footer />
       </section>

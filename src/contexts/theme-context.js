@@ -6,22 +6,24 @@ import mamacoPrego from "../assets/macaco-prego.jpg"
 
 export const themes = {
     light: {
-        background: 'linear-gradient(rgba(255, 255, 255, 1), rgba(145, 228, 240, 1))',
-        fontColorTitle: 'rgba(0, 0, 0, 1)',
         fontColorText: 'rgba(44, 48, 48, 0.94)',
-        img: mamacoPrego,
+        fontColorTitle: 'rgba(0, 0, 0, 1)',
+        background: 'linear-gradient(rgba(255, 255, 255, 1), rgba(145, 228, 240, 1))',
         icon: <BsFillMoonFill />,
         colorIcon: 'rgba(66, 24, 103, 1)',
         colorIconShadow: 'rgba(66, 24, 103, 0.3)',
+        backgroundCard: '#E894E4',
+        img: mamacoPrego,
     },
     dark: {
-        background: 'linear-gradient(rgba(0,0,0,1), rgba(27, 2, 45, 1)',
-        fontColorTitle: 'rgba(250, 250, 250, 1)',
         fontColorText: 'rgba(192, 198, 203, 1)',
-        img: zam,
+        fontColorTitle: 'rgba(250, 250, 250, 1)',
+        background: 'linear-gradient(rgba(0,0,0,1), rgba(40, 6, 64, 1)',
         icon: <GiSun />,
         colorIcon: 'rgba(211, 240, 21, 1)',
         colorIconShadow: 'rgba(211, 240, 21, 0.3)',
+        backgroundCard: '#090D41    ',
+        img: zam,
     }
 };
 

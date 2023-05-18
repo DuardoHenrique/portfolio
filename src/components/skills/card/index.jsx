@@ -8,7 +8,7 @@ export const Card = ({ title, icon, description }) => {
     const { theme } = useContext(ThemeContext)
 
     return (
-        <DivCard shadowColor={theme.fontColorTitle}>
+        <DivCard background={theme.backgroundCard}>
             <Title title={title} />
             <Description content={description} icon={icon}/>
         </DivCard>

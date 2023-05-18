@@ -9,5 +9,7 @@ export const DivCard = styled.div`
 
 
     /* box-shadow: ${({ shadowColor }) => `0 0 10px ${shadowColor}`}; */
-    box-shadow: 0 0 10px #9F2222;
+    background-color: ${({background}) => background};
 `
+// rgba(207, 46, 159, 1)
+// #040B7E

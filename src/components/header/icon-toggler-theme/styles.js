@@ -21,6 +21,9 @@ export const Div = styled.div`
 
   cursor: pointer;
   /* animation: ${blinkBorderIcon} 1s linear 2s infinite alternate-reverse; */
+  @media(max-width: 480px) {
+    margin-right: 15px;
+  }
 `
 
 export const I = styled.i`

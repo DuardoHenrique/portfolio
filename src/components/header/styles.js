@@ -8,6 +8,7 @@ export const HeaderFlex = styled.header`
   height: 13vh;
 
   @media(max-width: 480px) {
-    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
   }
 `
