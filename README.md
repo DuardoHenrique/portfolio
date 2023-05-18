@@ -15,6 +15,6 @@
 - React
 
 ## Hospedado na Netlify
-
+<a href="https://portfolio-faltando-projects.netlify.app/">Deploy</a>
 
 

@@ -3,38 +3,38 @@ import { Content } from "../content"
 import { ThemeContext } from "../../../contexts/theme-context"
 
 export const Expected = ({ icon }) => {
-    const { content } = useContext(ThemeContext)
+    const { skills } = useContext(ThemeContext)
 
     return (
         <>
             <Content
                 icon={icon[0]}
-                text={content.text.expected.logic}
-                color={content.color.expected.logic}
-                background={content.background.expected.logic}
+                text={skills.text.expected.logic}
+                color={skills.color.expected.logic}
+                background={skills.background.expected.logic}
             />
 
             <Content
                 icon={icon[1]}
-                text={content.text.expected.git}
-                color={content.color.expected.git}
-                background={content.background.expected.git}
+                text={skills.text.expected.git}
+                color={skills.color.expected.git}
+                background={skills.background.expected.git}
             />
 
             <Content
                 icon={icon[2]}
-                text={content.text.expected.gitHub}
-                color={content.color.expected.gitHub}
-                background={content.background.expected.gitHub}
+                text={skills.text.expected.gitHub}
+                color={skills.color.expected.gitHub}
+                background={skills.background.expected.gitHub}
             />
-            
+
             <Content
                 icon={icon[3]}
                 iconAdditional={icon[4]}
-                text={content.text.expected.npmAndYarn}
-                color={content.color.expected.npm}
-                colorAdditional={content.color.expected.yarn}
-                background={content.background.expected.npmAndYarn}
+                text={skills.text.expected.npmAndYarn}
+                color={skills.color.expected.npm}
+                colorAdditional={skills.color.expected.yarn}
+                background={skills.background.expected.npmAndYarn}
             />
         </>
     )

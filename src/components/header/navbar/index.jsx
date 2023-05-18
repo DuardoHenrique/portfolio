@@ -7,19 +7,13 @@ import { useEffect } from "react"
 
 export const NavBar = () => {
   const [urlAtual, setUrlAtual] = useState(window.location.href)
-  const [urlInitial, setUrlInitial] = useState()
 
   const { theme } = useContext(ThemeContext)
 
-  useEffect(() => {
-    const urlInitial = window.location.href
-    setUrlInitial(urlInitial)
-    console.log('urlInitial',urlInitial)
-  }, [])
+  localStorage.setItem('urlInitial', window.location.href)
 
   useEffect(() => {
     setUrlAtual(urlAtual)
-    console.log('urlAtual', urlAtual)
   }, [urlAtual])
 
   return (
@@ -27,25 +21,25 @@ export const NavBar = () => {
     <nav>
       <Ul onClick={() => setUrlAtual(window.location.href)}>
 
-          <Li urlInitial={urlInitial} urlAtual={urlAtual} home >
+          <Li urlInitial={localStorage.getItem('url')} urlAtual={urlAtual} home >
             <Link to={'/'} style={{ color: theme.fontColorText }} >
               Inicial
             </Link>
           </Li>
 
-          <Li urlInitial={urlInitial} urlAtual={urlAtual} >
+          <Li urlInitial={localStorage.getItem('url')} urlAtual={urlAtual} >
             <Link to={'/about'} style={{ color: theme.fontColorText }} >
               Sobre
             </Link>
           </Li>
 
-          <Li urlInitial={urlInitial} urlAtual={urlAtual} >
+          <Li urlInitial={localStorage.getItem('url')} urlAtual={urlAtual} >
             <Link to={'/skills'} style={{ color: theme.fontColorText }} >
               Skills
             </Link>
           </Li>
 
-          <Li urlInitial={urlInitial} urlAtual={urlAtual} >
+          <Li urlInitial={localStorage.getItem('url')} urlAtual={urlAtual} >
             <Link to={'/projects'} style={{ color: theme.fontColorText }} >
               Projects
             </Link>

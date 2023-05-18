@@ -12,7 +12,7 @@ export const themes = {
         icon: <BsFillMoonFill />,
         colorIcon: 'rgba(66, 24, 103, 1)',
         colorIconShadow: 'rgba(66, 24, 103, 0.3)',
-        backgroundCard: '#E894E4',
+        backgroundCard: '#68E9B4',
         img: mamacoPrego,
     },
     dark: {
@@ -22,12 +22,12 @@ export const themes = {
         icon: <GiSun />,
         colorIcon: 'rgba(211, 240, 21, 1)',
         colorIconShadow: 'rgba(211, 240, 21, 0.3)',
-        backgroundCard: '#090D41    ',
+        backgroundCard: '#064F31',
         img: zam,
     }
 };
 
-const content = {
+const skills = {
     color: {
         expected: {
             logic: 'rgb(242,242,242)',
@@ -90,6 +90,10 @@ const content = {
     }
 }
 
+const projects = {
+
+}
+
 export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
@@ -98,7 +102,7 @@ export const ThemeProvider = (props) => {
 
 
     return (
-        <ThemeContext.Provider value={{ theme, setTheme, content }}>
+        <ThemeContext.Provider value={{ theme, setTheme, skills, projects }}>
             {props.children}
         </ThemeContext.Provider>
     )

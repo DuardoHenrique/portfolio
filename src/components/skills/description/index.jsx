@@ -1,9 +1,9 @@
 import { DivDescription } from "./styles"
 
-export const Description = ({content}) => {
+export const Description = ({skills}) => {
     return (
        <DivDescription>
-           {content}
+           {skills}
        </DivDescription>
     )
 }

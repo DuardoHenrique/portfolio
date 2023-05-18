@@ -10,7 +10,7 @@ export const Card = ({ title, icon, description }) => {
     return (
         <DivCard background={theme.backgroundCard}>
             <Title title={title} />
-            <Description content={description} icon={icon}/>
+            <Description skills={description} icon={icon}/>
         </DivCard>
     )
 }
