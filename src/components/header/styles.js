@@ -9,6 +9,6 @@ export const HeaderFlex = styled.header`
 
   @media(max-width: 480px) {
     justify-content: center;
-    padding: 50px 10px;
+    padding: 50px 10px 0 10px;
   }
 `

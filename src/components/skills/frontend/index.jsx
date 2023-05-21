@@ -3,45 +3,45 @@ import { Content } from "../content"
 import { ThemeContext } from "../../../contexts/theme-context"
 
 export const Front = ({ icon }) => {
-    const { skills } = useContext(ThemeContext)
+    const { content } = useContext(ThemeContext)
 
     return (
         <>
             <Content
                 icon={icon[0]}
-                text={skills.text.front.html}
-                color={skills.color.front.html}
-                background={skills.background.front.html}
+                text={content.text.html}
+                color={content.color.html}
+                background={content.background.html}
             />
             <Content
                 icon={icon[1]}
-                text={skills.text.front.css}
-                color={skills.color.front.css}
-                background={skills.background.front.css}
+                text={content.text.css}
+                color={content.color.css}
+                background={content.background.css}
             />
             <Content
                 icon={icon[2]}
-                text={skills.text.front.javaScript}
-                color={skills.color.front.javaScript}
-                background={skills.background.front.javaScript}
+                text={content.text.javaScript}
+                color={content.color.javaScript}
+                background={content.background.javaScript}
             />
             <Content
                 icon={icon[3]}
-                text={skills.text.front.react}
-                color={skills.color.front.react}
-                background={skills.background.front.react}
+                text={content.text.react}
+                color={content.color.react}
+                background={content.background.react}
             />
             <Content
                 icon={icon[4]}
-                text={skills.text.front.jest}
-                color={skills.color.front.jest}
-                background={skills.background.front.jest}
+                text={content.text.jest}
+                color={content.color.jest}
+                background={content.background.jest}
             />
             <Content
                 icon={icon[5]}
-                text={skills.text.front.api}
-                color={skills.color.front.api}
-                background={skills.background.front.api}
+                text={content.text.api}
+                color={content.color.api}
+                background={content.background.api}
             />
         </>
     )

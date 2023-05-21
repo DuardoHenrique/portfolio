@@ -9,6 +9,7 @@ export const Apresentation = () => {
     <Div style={{color: theme.fontColorText}}>
       <p>Olá,</p>
       <p>Sou o Edu,tenho 20 anos</p>
+      <p>Muita vontade e disposição de adquirir conhecimento</p>
       <p>E busco uma opurtunidade na área de programação como desenvolvedor web</p>
     </Div>
   )

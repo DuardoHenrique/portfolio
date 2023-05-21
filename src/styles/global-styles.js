@@ -25,5 +25,6 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
 `

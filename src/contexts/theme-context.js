@@ -4,6 +4,18 @@ import { GiSun } from 'react-icons/gi'
 import zam from "../assets/zam.jpg"
 import mamacoPrego from "../assets/macaco-prego.jpg"
 
+import { BsGit, BsGithub } from "react-icons/bs"
+import { GiBrain } from "react-icons/gi"
+import { AiFillHtml5 } from "react-icons/ai"
+import { DiCss3 } from "react-icons/di"
+import { SiJavascript } from "react-icons/si"
+import { RiReactjsLine } from "react-icons/ri"
+import { SiJest } from "react-icons/si"
+import { FaPython } from "react-icons/fa"
+import { BsFillGearFill } from "react-icons/bs"
+import { TbBrandNpm } from "react-icons/tb"
+import { SiYarn } from "react-icons/si"
+
 export const themes = {
     light: {
         fontColorText: 'rgba(44, 48, 48, 0.94)',
@@ -12,7 +24,7 @@ export const themes = {
         icon: <BsFillMoonFill />,
         colorIcon: 'rgba(66, 24, 103, 1)',
         colorIconShadow: 'rgba(66, 24, 103, 0.3)',
-        backgroundCard: '#68E9B4',
+        backgroundCard: 'rgba(43, 230, 44, 0.1)',
         img: mamacoPrego,
     },
     dark: {
@@ -22,76 +34,67 @@ export const themes = {
         icon: <GiSun />,
         colorIcon: 'rgba(211, 240, 21, 1)',
         colorIconShadow: 'rgba(211, 240, 21, 0.3)',
-        backgroundCard: '#064F31',
+        backgroundCard: 'rgba(14, 116, 14, 0.2)',
         img: zam,
     }
 };
 
-const skills = {
+const content = {
+    icon: {
+        brain: <GiBrain />,
+        git: <BsGit />,
+        gitHub: <BsGithub />,
+        npm: <TbBrandNpm />,
+        yarn: <SiYarn />,
+        html: <AiFillHtml5 />,
+        css: <DiCss3 />,
+        javaScript: <SiJavascript />,
+        react: <RiReactjsLine />,
+        jest: <SiJest />,
+        gear: <BsFillGearFill />,
+        python: <FaPython />,
+    },
     color: {
-        expected: {
-            logic: 'rgb(242,242,242)',
-            git: 'rgb(229,75,47)',
-            gitHub: 'rgb(98,91,140)',
-            npm: 'rgb(193,53,52)',
-            yarn: 'rgb(44,142,187)',
-        },
-        front: {
-            html: 'rgb(216,73,36)',
-            css: 'rgb(36,73,216)',
-            javaScript: '#D3BF15',
-            react: 'rgb(92,207,238)',
-            jest: 'rgb(145,63,86)',
-            api: 'black'
-        },
-        back: {
-            python: '#4A9349'
-        }
+        brain: 'rgb(242,242,242)',
+        git: 'rgb(229,75,47)',
+        gitHub: 'rgb(98,91,140)',
+        npm: 'rgb(193,53,52)',
+        yarn: 'rgb(44,142,187)',
+        html: 'rgb(216,73,36)',
+        css: 'rgb(36,73,216)',
+        javaScript: '#D3BF15',
+        react: 'rgb(92,207,238)',
+        jest: 'rgb(145,63,86)',
+        api: 'black',
+        python: '#4A9349'
     },
 
     background: {
-        expected: {
-            logic: 'rgba(42, 82, 241, 1)',
-            git: 'rgba(237, 132, 111, 1)',
-            gitHub: 'rgba(147, 121, 223, 1)',
-            npmAndYarn: 'linear-gradient(#65B0D2, #D46565)',
-        },
-        front: {
-            html: 'rgba(235, 137, 112, 1)',
-            css: '#5572E1',
-            javaScript: '#DCD491',
-            react: '#A2E3F4',
-            jest: '#C6718D',
-            api: '#35373B'
-        },
-        back: {
-            python: '#87CD86'
-        }
+        brain: 'rgba(42, 82, 241, 1)',
+        git: 'rgba(237, 132, 111, 1)',
+        gitHub: 'rgba(147, 121, 223, 1)',
+        npmAndYarn: 'linear-gradient(#65B0D2, #D46565)',
+        html: 'rgba(235, 137, 112, 1)',
+        css: '#5572E1',
+        javaScript: '#DCD491',
+        react: '#A2E3F4',
+        jest: '#C6718D',
+        api: '#35373B',
+        python: '#87CD86'
     },
-
     text: {
-        expected: {
-           logic: 'Lógica de programação',
-           git: 'Git',
-           gitHub: 'GitHub',
-           npmAndYarn: 'NPM/YARN',
-        },
-        front: {
-            html: 'HTML5',
-            css: 'CSS3',
-            javaScript: 'JavaScript',
-            react: 'ReactJS',
-            jest: 'Jest',
-            api: 'API'
-        },
-        back: {
-            python: 'Python'
-        }
+        brain: 'Lógica de programação',
+        git: 'Git',
+        gitHub: 'GitHub',
+        npmAndYarn: 'NPM/YARN',
+        html: 'HTML5',
+        css: 'CSS3',
+        javaScript: 'JavaScript',
+        react: 'ReactJS',
+        jest: 'Jest',
+        api: 'API',
+        python: 'Python'
     }
-}
-
-const projects = {
-
 }
 
 export const ThemeContext = createContext({});
@@ -102,7 +105,7 @@ export const ThemeProvider = (props) => {
 
 
     return (
-        <ThemeContext.Provider value={{ theme, setTheme, skills, projects }}>
+        <ThemeContext.Provider value={{ theme, setTheme, content }}>
             {props.children}
         </ThemeContext.Provider>
     )

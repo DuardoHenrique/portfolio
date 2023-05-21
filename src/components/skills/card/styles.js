@@ -11,5 +11,3 @@ export const DivCard = styled.div`
     /* box-shadow: ${({ shadowColor }) => `0 0 10px ${shadowColor}`}; */
     background-color: ${({background}) => background};
 `
-// rgba(207, 46, 159, 1)
-// #040B7E
