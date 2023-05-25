@@ -1,6 +1,7 @@
 import { ConatainerPhoto, Img } from "./styles"
 import { useContext } from "react"
 import { ThemeContext } from "../../../contexts/theme-context"
+import selfie from "../../../assets/selfie.png"
 
 
 export const Photo = () => {
@@ -8,7 +9,7 @@ export const Photo = () => {
 
   return (
     <ConatainerPhoto>
-      <Img src={theme.img} alt="minha foto de perfil" />
+      <Img src={selfie} alt="foto de perfil" />
     </ConatainerPhoto>
   )
 }

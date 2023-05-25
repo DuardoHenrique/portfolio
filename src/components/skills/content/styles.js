@@ -19,7 +19,6 @@ export const DivContent = styled.div`
     background: ${({background}) => background};
     height: 45px;
     width: 90%;
-    cursor: help;
 
     &:not(:last-child){
         margin-bottom: 30px;
