@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import { BsFillMoonFill } from 'react-icons/bs';
 import { GiSun } from 'react-icons/gi'
-import zam from "../assets/zam.jpg"
-import mamacoPrego from "../assets/macaco-prego.jpg"
 
 import { BsGit, BsGithub } from "react-icons/bs"
 import { GiBrain } from "react-icons/gi"
@@ -25,7 +23,6 @@ export const themes = {
         colorIcon: 'rgba(66, 24, 103, 1)',
         colorIconShadow: 'rgba(66, 24, 103, 0.3)',
         backgroundCard: 'rgba(43, 230, 44, 0.1)',
-        img: mamacoPrego,
     },
     dark: {
         fontColorText: 'rgba(192, 198, 203, 1)',
@@ -35,7 +32,6 @@ export const themes = {
         colorIcon: 'rgba(211, 240, 21, 1)',
         colorIconShadow: 'rgba(211, 240, 21, 0.3)',
         backgroundCard: 'rgba(14, 116, 14, 0.2)',
-        img: zam,
     }
 };
 
