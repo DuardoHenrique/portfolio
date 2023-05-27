@@ -14,7 +14,6 @@
 - JavaScript
 - React
 
-## Hospedado na Netlify
-[<img  src="" alt="" />]()
+## Pressiona CTRL + clique <a href="https://duardoribeiro.com.br/" target="_blank" >AQUI</a> para acessar o projeto em uma nova aba.
 
 
