@@ -1,15 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
-const blinkBorderIcon = keyframes`
-    from {
-      box-shadow: 0 0 15px yellow;
-    }
-
-    to {
-      box-shadow: 0 0 15px rgba(66, 24, 103, 1);
-    }
-  `
 
 export const Div = styled.div`
 
@@ -20,7 +11,6 @@ export const Div = styled.div`
   border-radius: 50%;
 
   cursor: pointer;
-  /* animation: ${blinkBorderIcon} 1s linear 2s infinite alternate-reverse; */
   @media(max-width: 480px) {
     margin-right: 15px;
   }

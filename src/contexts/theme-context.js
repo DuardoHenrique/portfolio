@@ -89,7 +89,10 @@ const content = {
         react: 'ReactJS',
         jest: 'Jest',
         api: 'API',
-        python: 'Python'
+        python: 'Python',
+        grid: 'Landing Page criada  em HTML e CSS, proposta pelo curso DevQuest, onde pude por em prática os conhecimentos adquiridos em HTML e CSS, sobre tudo o Display Grid,',
+        mario: 'Projeto proposto pelo curso DevQuest, após uma apresentação ao JavaScript, onde pude iniciar minha experiência em interação com o usuário.',
+        newYorkDu: 'Projeto desenvolvido sozinho utilizando os conhecimentos em HTML5, CSS3, JavaScript, React e conceitos de API. Projeto que pra mim foi muito desafiador, principalmente por mesclar "todos" esses conhecimentos em um único projeto. Ainda não está finalizado, falta uma seção e otimizações no código.'
     }
 }
 

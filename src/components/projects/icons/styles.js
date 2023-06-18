@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const DivIcons = styled.div`
-display: flex;
-justify-content: space-around;
-align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: white;
     height: 10%;
     width: 100%;
