@@ -8,8 +8,8 @@ export const IconApi = () => {
 
     return(
         <Icons
-        hrefDeploy='https://duardohenrique.github.io/portfolio-xeque-mate/'
-        hrefRepo={'https://github.com/DuardoHenrique/portfolio-xeque-mate'}
+        hrefDeploy='https://new-york-du.netlify.app/'
+        hrefRepo={'https://github.com/DuardoHenrique/dudu-times'}
         >
             <I color={content.color.html}>{content.icon.html}</I>
             <I color={content.color.css} >{content.icon.css}</I>

@@ -15,7 +15,7 @@ export const Card = ({ print, description, icon }) => {
       onMouseLeave={() => setVisible(false)}
     >
       <img src={print} alt="" />
-      <DivParagraph>
+      <DivParagraph visible={visible} >
         <P
           color={theme.fontColorText}
           visible={visible}

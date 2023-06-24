@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const DivCard = styled.div`
     width: 390px;
     min-height: 250px;
-    margin: 10px;
+    margin: 10px 50px;
+    padding-bottom: 5px;
     background-color: white;
 
     img {
@@ -24,7 +25,7 @@ export const DivCard = styled.div`
 `
 
 export const DivParagraph = styled.div`
-  padding: 7px;
+  padding: ${({visible}) => visible === false ? '0' : '7px'};
 `
 
 export const P = styled.p`
