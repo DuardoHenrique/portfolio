@@ -25,13 +25,13 @@ export const NavBar = () => {
 
           <Li >
             <Link to={'/skills'} style={{ color: theme.fontColorText }} >
-              Skills
+              Habilidades
             </Link>
           </Li>
 
           <Li>
             <Link to={'/projects'} style={{ color: theme.fontColorText }} >
-              Projects
+              Projetos
             </Link>
           </Li>
 
