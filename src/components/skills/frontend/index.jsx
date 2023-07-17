@@ -31,12 +31,12 @@ export const Front = ({ icon }) => {
                 color={content.color.react}
                 background={content.background.react}
             />
-            <Content
+            {/* <Content
                 icon={icon[4]}
                 text={content.text.jest}
                 color={content.color.jest}
                 background={content.background.jest}
-            />
+            /> */}
             <Content
                 icon={icon[5]}
                 text={content.text.api}

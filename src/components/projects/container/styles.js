@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const DivContainer = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    flex-wrap: wrap;
+    display: grid;
+    grid:
+      'newYork .'
+      '. mario'
+      'grid .'
+     ;
+
     min-height: 87vh;
-    width: 95%;
-    padding: 10px 0;
-    box-shadow: ${({shadow}) => `0 0 4px ${shadow}`};
+    width: 100%;
 `

@@ -50,7 +50,7 @@ export const Container = styled.div`
     height: min-content;
     width: 75%;
     border-radius: 10px;
-    box-shadow: ${({shadowColor}) => `0 0 10px ${shadowColor}`};;
+    box-shadow: ${({shadowColor}) => `0 0 10px ${shadowColor}`};
 
     @media(max-width: 1200px) {
         width: 70%;

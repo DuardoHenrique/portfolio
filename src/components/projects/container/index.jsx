@@ -11,13 +11,33 @@ import apiPrint from "../../../assets/new-york_du.png"
 import { IconApi } from "../icon-api"
 
 export const Container = () => {
-    const { theme, content } = useContext(ThemeContext)
+  const { theme, content } = useContext(ThemeContext)
 
-    return (
-        <DivContainer shadow={theme.fontColorTitle}>
-            <Card print={gridPrint} description={content.text.grid} icon={<IconGrid />}/>
-            <Card print={marioPrint} description={content.text.mario} icon={<IconMario />} />
-            <Card print={apiPrint} description={content.text.newYorkDu} icon={<IconApi />} />
-        </DivContainer>
-    )
+  return (
+    <DivContainer shadow={theme.fontColorTitle}>
+      <Card
+        print={apiPrint}
+        description={content.text.newYorkDu}
+        icon={<IconApi />}
+        gridArea='newYork'
+        position='left'
+      />
+
+      <Card
+        print={marioPrint}
+        description={content.text.mario}
+        icon={<IconMario />}
+        gridArea='mario'
+        position='right'
+      />
+
+      <Card
+        print={gridPrint}
+        description={content.text.grid}
+        icon={<IconGrid />}
+        gridArea='grid'
+        position='left'
+      />
+    </DivContainer>
+  )
 }

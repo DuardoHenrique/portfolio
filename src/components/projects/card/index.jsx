@@ -1,29 +1,57 @@
 import { useContext } from "react"
-import { DivCard, DivParagraph, P } from "./styles"
+import { DivCard, DivDescription, DivImage, P } from "./styles"
 import { ThemeContext } from "../../../contexts/theme-context"
-import { useState } from "react"
 
-export const Card = ({ print, description, icon }) => {
+export const Card = ({ print, description, icon, gridArea, position }) => {
   const { theme } = useContext(ThemeContext)
 
-  const [visible, setVisible] = useState(false)
-
   return (
-    <DivCard
-      background={theme.backgroundCard}
-      onMouseEnter={() => setVisible(true)}
-      onMouseLeave={() => setVisible(false)}
-    >
-      <img src={print} alt="" />
-      <DivParagraph visible={visible} >
-        <P
-          color={theme.fontColorText}
-          visible={visible}
+    <>
+      {position === 'left'
+        ?
+        <DivCard
+          gridArea={gridArea}
+          background={theme.backgroundCard}
         >
-          {description}
-        </P>
-      </DivParagraph>
-      {icon}
-    </DivCard>
+          <DivImage>
+            <div>
+              <img src={print} alt={`projeto ${gridArea}`} />
+
+              {icon}
+            </div>
+          </DivImage>
+
+
+          <DivDescription>
+            <P
+              color={theme.fontColorText}
+            >
+              {description}
+            </P>
+          </DivDescription>
+        </DivCard>
+
+        :
+
+        <DivCard
+          gridArea={gridArea}
+          background={theme.backgroundCard}
+        >
+          <DivDescription>
+            <P
+              color={theme.fontColorText}
+            >
+              {description}
+            </P>
+          </DivDescription>
+
+          <DivImage>
+            <img src={print} alt={`projeto ${gridArea}`} />
+
+            {icon}
+          </DivImage>
+
+        </DivCard>}
+    </>
   )
 }

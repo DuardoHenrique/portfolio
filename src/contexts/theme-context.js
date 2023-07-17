@@ -22,7 +22,7 @@ export const themes = {
         icon: <BsFillMoonFill />,
         colorIcon: 'rgba(66, 24, 103, 1)',
         colorIconShadow: 'rgba(66, 24, 103, 0.3)',
-        backgroundCard: 'rgba(43, 230, 44, 0.1)',
+        backgroundCard: '#f49ab4',
     },
     dark: {
         fontColorText: 'rgba(192, 198, 203, 1)',
@@ -31,7 +31,7 @@ export const themes = {
         icon: <GiSun />,
         colorIcon: 'rgba(211, 240, 21, 1)',
         colorIconShadow: 'rgba(211, 240, 21, 0.3)',
-        backgroundCard: 'rgba(14, 116, 14, 0.2)',
+        backgroundCard: '#a81629',
     }
 };
 
@@ -57,14 +57,14 @@ const content = {
         npm: 'rgb(193,53,52)',
         yarn: 'rgb(44,142,187)',
         html: 'rgb(216,73,36)',
-        css: 'rgb(36,73,216)',
-        javaScript: '#D3BF15',
-        react: 'rgb(92,207,238)',
+        css: '#1335B8',
+        javaScript: '#9C8E13',
+        react: '#51B6D2',
         jest: 'rgb(145,63,86)',
         api: 'black',
-        python: '#4A9349'
+        python: '#4A9349',
     },
-
+    
     background: {
         brain: 'rgba(42, 82, 241, 1)',
         git: 'rgba(237, 132, 111, 1)',
@@ -75,7 +75,7 @@ const content = {
         javaScript: '#DCD491',
         react: '#A2E3F4',
         jest: '#C6718D',
-        api: '#35373B',
+        api: '#45474D',
         python: '#87CD86'
     },
     text: {
