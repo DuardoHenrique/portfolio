@@ -2,17 +2,13 @@ import { useContext } from "react"
 import { DivCard, DivDescription, DivImage, P } from "./styles"
 import { ThemeContext } from "../../../contexts/theme-context"
 
-export const Card = ({ print, description, icon, gridArea, position }) => {
+export const Card = ({ print, description, icon, gridArea }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <>
-      {position === 'left'
-        ?
-        <DivCard
+    <DivCard
           gridArea={gridArea}
           background={theme.backgroundCard}
-          position={position}
         >
           <DivImage>
             <div>
@@ -31,29 +27,5 @@ export const Card = ({ print, description, icon, gridArea, position }) => {
             </P>
           </DivDescription>
         </DivCard>
-
-        :
-
-        <DivCard
-          gridArea={gridArea}
-          background={theme.backgroundCard}
-          position={position}
-        >
-          <DivDescription>
-            <P
-              color={theme.fontColorText}
-            >
-              {description}
-            </P>
-          </DivDescription>
-
-          <DivImage>
-            <img src={print} alt={`projeto ${gridArea}`} />
-
-            {icon}
-          </DivImage>
-
-        </DivCard>}
-    </>
   )
 }

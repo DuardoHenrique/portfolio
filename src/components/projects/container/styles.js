@@ -4,8 +4,9 @@ export const DivContainer = styled.div`
     display: grid;
     grid:
       'newYork .'
-      '. mario'
-      'grid .'
+      '. tracker'
+      'mario .'
+      '. grid'
      ;
 
     justify-items: center;
@@ -16,6 +17,7 @@ export const DivContainer = styled.div`
     @media (max-width: 880px) {
       grid: 
         'newYork'
+        'tracker'
         'mario'
         'grid';
 
