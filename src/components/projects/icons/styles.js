@@ -8,6 +8,13 @@ export const DivIcons = styled.div`
     width: 100%;
     margin-top: 5px;
     font-size: 1.5rem;
+    margin-bottom: 7px;  
+`
+export const DivChildren = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 `
 
 export const Button = styled.button`

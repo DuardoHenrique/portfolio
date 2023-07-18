@@ -12,6 +12,7 @@ export const Card = ({ print, description, icon, gridArea, position }) => {
         <DivCard
           gridArea={gridArea}
           background={theme.backgroundCard}
+          position={position}
         >
           <DivImage>
             <div>
@@ -36,6 +37,7 @@ export const Card = ({ print, description, icon, gridArea, position }) => {
         <DivCard
           gridArea={gridArea}
           background={theme.backgroundCard}
+          position={position}
         >
           <DivDescription>
             <P

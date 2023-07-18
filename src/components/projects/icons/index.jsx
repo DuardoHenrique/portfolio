@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Button, DivIcons } from "./styles"
+import { Button, DivChildren, DivIcons } from "./styles"
 import { ThemeContext } from "../../../contexts/theme-context"
 
 export const Icons = ({ children, hrefDeploy, hrefRepo }) => {
@@ -21,9 +21,9 @@ export const Icons = ({ children, hrefDeploy, hrefRepo }) => {
         </Button>
       </a>
 
-      <div>
+      <DivChildren>
         {children}
-      </div>
+      </DivChildren>
 
       <a
         href={hrefDeploy}
